@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_smart6"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgcontact"
+    tools:context="com.example.meka_it.smarthotel2.buttonsmart.SmartContact">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="#F8F9F9"
+        android:alpha="0.5">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="CONTACT"
+            android:textColor="#000"
+            android:textSize="30dp"
+            android:typeface="sans" />
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/selector_buttonback"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cardview_shadow_start_color"
+        android:orientation="vertical"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout5"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/btn_7"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/logosh"
+            android:layout_marginTop="32dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Smart Hotel"
+            android:textColor="#FFF"
+            android:textSize="30dp"
+            android:typeface="sans"
+            android:layout_below="@+id/btn_7"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp" />
+
+        <ImageButton
+            android:layout_width="150dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="21dp"
+            android:id="@+id/chat"
+            android:src="@drawable/csmartchat"
+            android:layout_marginStart="14dp"
+
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentStart="true" />
+        <ImageButton
+            android:layout_width="150dp"
+            android:layout_height="140dp"
+            android:layout_alignTop="@+id/chat"
+            android:src="@drawable/csmartcall"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/btn_7"
+            android:layout_marginEnd="19dp"
+            android:id="@+id/call"
+            android:onClick="call"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

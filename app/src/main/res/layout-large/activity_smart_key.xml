@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_smart1"
+    android:layout_width="match_parent"
+    android:background="@drawable/doorlock"
+    android:layout_height="match_parent"
+    tools:context="com.example.meka_it.smarthotel2.buttonsmart.SmartFood">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="#F8F9F9"
+        android:alpha="0.5">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Smart Key"
+            android:textColor="#000"
+            android:textSize="30dp"
+            android:typeface="sans" />
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/selector_buttonback" />
+    </RelativeLayout>
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginTop="15dp"
+        android:id="@+id/relativeLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Room"
+            android:textSize="40dp"
+            android:textColor="#000"
+            android:id="@+id/textView3"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No. _ _ _ _"
+            android:textSize="40dp"
+            android:textColor="#000"
+            android:layout_marginTop="28dp"
+            android:id="@+id/textView4"
+            android:layout_below="@+id/textView3"
+            android:layout_alignEnd="@+id/textView3" />
+
+        <ImageButton
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/lockk"
+            android:id="@+id/unlock"
+            android:layout_marginTop="43dp"
+            android:layout_below="@+id/textView4"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Locked!"
+            android:textSize="30dp"
+            android:textColor="#FFF"
+            android:id="@+id/textView"
+            android:layout_below="@+id/unlock"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="27dp" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
+
+

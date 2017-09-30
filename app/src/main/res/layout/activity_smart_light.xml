@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_smart4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lightbackground"
+    tools:context="com.example.meka_it.smarthotel2.buttonsmart.SmartLight">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="#F8F9F9"
+        android:alpha="0.5">
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="SMART LIGHT"
+            android:textColor="#000"
+            android:textSize="30dp"
+            android:typeface="sans" />
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/selector_buttonback" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView9"
+            android:layout_alignBottom="@+id/textView9"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/switch1"
+            android:text="OFF"
+            android:textColor="#fff"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DAY"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/switch1" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/switch1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="54dp"
+            android:text="ON"
+            android:textColor="#fff"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <ImageView
+            android:id="@+id/btn_1"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+
+            android:background="@drawable/day"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="64dp" />
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/btn_1"
+            android:layout_marginTop="28dp"
+            android:layout_toStartOf="@+id/textView9" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_alignParentStart="true">
+
+
+        <TextView
+            android:id="@+id/textView112"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/switch12"
+            android:layout_marginEnd="7dp"
+            android:layout_toStartOf="@+id/switch12"
+            android:text="OFF"
+            android:textColor="#fff"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:layout_alignTop="@+id/textView92" />
+
+        <TextView
+            android:id="@+id/textView102"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Night"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:layout_alignParentTop="true"
+            android:layout_alignEnd="@+id/switch12"
+            android:layout_marginEnd="31dp" />
+
+        <TextView
+            android:id="@+id/textView92"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/switch12"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="57dp"
+            android:text="ON"
+            android:textColor="#fff"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <ImageView
+            android:id="@+id/btn_2"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+
+            android:background="@drawable/nightt"
+            android:layout_marginStart="66dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="9dp" />
+
+        <Switch
+            android:id="@+id/switch12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView102"
+            android:layout_toStartOf="@+id/textView92" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout222"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/relativeLayout22"
+        android:layout_alignParentStart="true">
+
+
+        <TextView
+            android:id="@+id/textView1122"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/switch122"
+            android:layout_marginEnd="7dp"
+            android:layout_toStartOf="@+id/switch122"
+            android:text="OFF"
+            android:textColor="#fff"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/textView1022"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sleep"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignEnd="@+id/switch122"
+            android:layout_marginEnd="32dp" />
+
+        <TextView
+            android:id="@+id/textView922"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/switch122"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="56dp"
+            android:text="ON"
+            android:textColor="#fff"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <ImageView
+            android:id="@+id/btn_22"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+
+            android:background="@drawable/sleepp"
+            android:layout_marginStart="67dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="9dp" />
+
+        <Switch
+            android:id="@+id/switch122"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1022"
+            android:layout_toStartOf="@+id/textView922" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2222"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/relativeLayout222"
+        android:layout_alignParentStart="true">
+
+
+        <TextView
+            android:id="@+id/textView10222"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Dimmer                "
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+
+        <ImageView
+            android:id="@+id/btn_222"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+
+            android:background="@drawable/dimmer"
+            android:layout_marginStart="65dp"
+            android:layout_alignTop="@+id/textView10222"
+            android:layout_alignParentStart="true" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:max="3"
+            android:layout_above="@+id/count"
+            android:layout_marginBottom="8dp"
+            android:layout_alignStart="@+id/textView10222"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Level: 0/3"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginStart="41dp"
+            android:layout_alignBottom="@+id/btn_222"
+            android:layout_alignStart="@+id/seekBar" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout22222"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/relativeLayout2222"
+        android:layout_alignParentStart="true">
+
+
+        <TextView
+            android:id="@+id/textView102222"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="BLINDS                 "
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+
+        <ImageView
+            android:id="@+id/btn_2222"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+
+            android:background="@drawable/blind"
+            android:layout_marginStart="65dp"
+            android:layout_alignTop="@+id/textView102222"
+            android:layout_alignParentStart="true" />
+
+        <SeekBar
+            android:id="@+id/seekBar2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView102222"
+            android:layout_marginTop="11dp"
+            android:max="3"
+            android:layout_alignStart="@+id/textView102222"
+            android:layout_alignParentEnd="true" />
+
+        <!--<TextView-->
+            <!--android:id="@+id/count2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Level: 0/3"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="15sp"-->
+            <!--android:textStyle="bold"-->
+            <!--android:layout_marginStart="41dp"-->
+            <!--android:layout_alignBottom="@+id/btn_2222"-->
+            <!--android:layout_alignStart="@+id/seekBar2" />-->
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

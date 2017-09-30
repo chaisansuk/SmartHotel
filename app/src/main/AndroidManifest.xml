@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.meka_it.smarthotel">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/picture6"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/picture6"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.example.meka_it.smarthotel2.main.SplashScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.example.meka_it.smarthotel2.main.MainStartActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.example.meka_it.smarthotel2.main.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.meka_it.smarthotel2.buttonsmart.SmartFood"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.meka_it.smarthotel2.buttonsmart.SmartKey"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.meka_it.smarthotel2.buttonsmart.SmartKeyUnLock"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.meka_it.smarthotel2.buttonsmart.SmartAir"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.meka_it.smarthotel2.buttonsmart.SmartLight"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.meka_it.smarthotel2.buttonsmart.SmartTv"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.meka_it.smarthotel2.buttonsmart.SmartContact"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.meka_it.smarthotel2.RegisterActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name="com.example.meka_it.smarthotel2.page.PageChef"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.example.meka_it.smarthotel2.page.PageFood1"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.example.meka_it.smarthotel2.page.PageFood2"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.example.meka_it.smarthotel2.page.PageFood3"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.example.meka_it.smarthotel2.page.PageFood4"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.example.meka_it.smarthotel2.page.PageFood5"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.example.meka_it.smarthotel2.page.PageFood6"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.example.meka_it.smarthotel2.page.PageFood7"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.example.meka_it.smarthotel2.page.PageFood8"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.example.meka_it.smarthotel2.page.PageFood9"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.example.meka_it.smarthotel2.page.PageFood10"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.example.meka_it.smarthotel2.page.PageFood11"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.example.meka_it.smarthotel2.page.PageFood12"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.example.meka_it.smarthotel2.page.PageFood13"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.example.meka_it.smarthotel2.page.PageFood14"
+            android:screenOrientation="portrait" />
+
+        <activity android:name="com.example.meka_it.smarthotel2.buttonsmart.ActivitySmartFood"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.example.meka_it.smarthotel2.page.PageDrink"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.example.meka_it.smarthotel2.page.PageWater1"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.example.meka_it.smarthotel2.page.PageWater2"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.example.meka_it.smarthotel2.page.PageWater3"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.example.meka_it.smarthotel2.page.PageWater4"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.example.meka_it.smarthotel2.page.PageWater5"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.example.meka_it.smarthotel2.page.PageWater6"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.example.meka_it.smarthotel2.page.PageWater7"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.example.meka_it.smarthotel2.page.PageWater8"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.example.meka_it.smarthotel2.page.PageWater9"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.example.meka_it.smarthotel2.page.PageWater10"
+            android:screenOrientation="portrait" />
+
+    </application>
+
+</manifest>
