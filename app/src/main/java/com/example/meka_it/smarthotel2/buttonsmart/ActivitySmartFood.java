@@ -103,7 +103,7 @@ public class ActivitySmartFood extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_smartfood);
+       setContentView(R.layout.activity_smartfood);
         ImageButton back = (ImageButton) findViewById(R.id.back);
 
         //tabhost

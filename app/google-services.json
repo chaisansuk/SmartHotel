@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "590308079695",
+    "firebase_url": "https://smarthotel-ex.firebaseio.com",
+    "project_id": "smarthotel-ex",
+    "storage_bucket": "smarthotel-ex.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:590308079695:android:f6c8b53014881bae",
+        "android_client_info": {
+          "package_name": "meka_it.smarthotel2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "590308079695-7lo7gmuc9ts67gqj7ohduelbhcv958do.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvmvBKWos9qmurWQ_6Uz6SMXWEyxuow8g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:590308079695:android:aa86ad7190ef2e99",
+        "android_client_info": {
+          "package_name": "com.example.meka_it.smarthotel2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "590308079695-7lo7gmuc9ts67gqj7ohduelbhcv958do.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvmvBKWos9qmurWQ_6Uz6SMXWEyxuow8g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

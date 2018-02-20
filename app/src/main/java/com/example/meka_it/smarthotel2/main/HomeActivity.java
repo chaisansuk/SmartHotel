@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -15,16 +16,31 @@ import com.example.meka_it.smarthotel2.buttonsmart.SmartAir;
 import com.example.meka_it.smarthotel2.buttonsmart.SmartContact;
 import com.example.meka_it.smarthotel2.buttonsmart.SmartLight;
 import com.example.meka_it.smarthotel2.buttonsmart.SmartTv;
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.InterstitialAd;
+import com.google.android.gms.ads.MobileAds;
 
 
 public class HomeActivity extends AppCompatActivity {
-
+    private InterstitialAd mInterstitialAd;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+        MobileAds.initialize(this, "ca-app-pub-3396251006559456~4490905780");
+        mInterstitialAd = new InterstitialAd(this);
+        mInterstitialAd.setAdUnitId("ca-app-pub-3396251006559456/3389577107");
+        mInterstitialAd.loadAd(new AdRequest.Builder().build());
+        mInterstitialAd.setAdListener(new AdListener() {
+            @Override
+            public void onAdClosed() {
+                // Load the next interstitial.
+                mInterstitialAd.loadAd(new AdRequest.Builder().build());
+            }
 
+        });
 
         // b
 //        Button button = (Button) findViewById(R.id.button);
@@ -47,19 +63,28 @@ public class HomeActivity extends AppCompatActivity {
 //            }
 //        });
         button2.setOnClickListener(new View.OnClickListener() {
-
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), SmartLight.class);
-                startActivity(i);
+                if (mInterstitialAd.isLoaded()) {
+                    mInterstitialAd.show();
+                    Intent i = new Intent(getApplicationContext(), SmartLight.class);
+                    startActivity(i);
+                } else {
+
+                }
+
             }
         });
         button3.setOnClickListener(new View.OnClickListener() {
-
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), SmartTv.class);
-                startActivity(i);
+                if (mInterstitialAd.isLoaded()) {
+                    mInterstitialAd.show();
+                    Intent i = new Intent(getApplicationContext(), SmartTv.class);
+                    startActivity(i);
+                } else {
+
+                }
             }
         });
         button4.setOnClickListener(new View.OnClickListener() {
